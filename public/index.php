@@ -1,0 +1,16 @@
+<?php
+// =========================================================
+// index.php — Front Controller (satu-satunya pintu masuk aplikasi)
+// =========================================================
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+require_once __DIR__ . '/../config/config.php';
+require_once __DIR__ . '/../app/core/Database.php';
+require_once __DIR__ . '/../app/core/Controller.php';
+require_once __DIR__ . '/../app/core/Router.php';
+
+$url = $_GET['url'] ?? '';
+
+$router = new Router();
+$router->dispatch($url);
