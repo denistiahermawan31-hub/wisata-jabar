@@ -1,4 +1,4 @@
-# JabarNature - Wisata Alam Jawa Barat
+# Wisata Alam Jawa Barat
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2E7D32&center=true&vCenter=true&width=500&lines=Selamat+Datang+di+JabarNature;Eksplorasi+Wisata+Alam+Jawa+Barat;PHP+Native+MVC+%2B+Bootstrap+5" alt="Typing Animation" />
