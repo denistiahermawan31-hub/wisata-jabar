@@ -1,13 +1,5 @@
 # Wisata Alam Jawa Barat
 
-<p align="center">
-  <a href="#tech-stack--tools">
-    <img src="https://img.shields.io/badge/PHP-Native_MVC-777BB4?style=for-the-badge&logo=php&logoColor=white" />
-    <img src="https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-    <img src="https://img.shields.io/badge/Frontend-Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" />
-  </a>
-</p>
-
 ---
 
 Aplikasi web fullstack katalog dan reservasi tiket destinasi wisata alam di Jawa Barat. Aplikasi ini dibangun menggunakan PHP Native dengan konsep arsitektur MVC (Model-View-Controller) manual tanpa framework backend, serta menggunakan Bootstrap 5 (CDN) untuk antarmuka pengguna.
