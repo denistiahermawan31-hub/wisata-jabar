@@ -1,5 +1,5 @@
 # WisataJabar — Wisata Alam Jawa Barat
-Tugas KK-RPL (Daring TKA) — Aplikasi Fullstack dengan konsep **MVC PHP Native**
+Tugas KK-RPL — Aplikasi Fullstack dengan konsep **MVC PHP Native**
 
 ## 🧱 Stack
 - Front-End: HTML, CSS, JavaScript, Bootstrap 5 (CDN)
@@ -22,7 +22,7 @@ WisataJabar/
 └── README.md
 ```
 
-## 🚀 Cara Install di Laragon
+## Cara Install di Laragon
 
 1. **Copy folder** `WisataJabar` ke `C:\laragon\www\`
 2. **Jalankan Laragon**, klik Start All (Apache + MySQL)
@@ -38,7 +38,7 @@ WisataJabar/
 5. Cek `config/config.php` kalau user/password MySQL kamu beda dari default
    Laragon (default: user `root`, password kosong).
 
-## 👤 Bikin Akun Admin
+## Bikin Akun Admin
 Supaya aman, hash password admin TIDAK ditanam manual di SQL. Caranya:
 1. Buka `/auth/register`, daftar akun biasa (nama, email, password)
 2. Buka tabel `users` di phpMyAdmin → cari akun itu → ubah kolom `role`
@@ -46,14 +46,14 @@ Supaya aman, hash password admin TIDAK ditanam manual di SQL. Caranya:
 3. Login lagi → otomatis diarahkan ke **Admin Dashboard** (`/admin`)
    untuk CRUD data destinasi
 
-## ✨ Fitur
+## Fitur
 - **Publik**: lihat daftar destinasi, search by nama/kabupaten, filter kategori,
   halaman detail (galeri foto + info + Google Maps)
 - **Auth**: register, login, logout (password di-hash pakai `password_hash()`)
 - **Admin**: dashboard tabel, tambah/edit/hapus (soft delete) destinasi,
   pulihkan data yang terhapus
 
-## 🧭 Routing (konsep MVC)
+## Routing (konsep MVC)
 Semua request masuk lewat `public/index.php`, di-parse oleh `Router.php`
 berdasarkan pola `controller/method/param`. Contoh:
 | URL                         | Controller@Method                  |
@@ -64,12 +64,12 @@ berdasarkan pola `controller/method/param`. Contoh:
 | `/admin`                     | `AdminController@index`             |
 | `/admin/edit/3`              | `AdminController@edit(3)`           |
 
-## 🤝 Pembagian Tugas (contoh, sesuaikan kelompok)
+## Pembagian Tugas (contoh, sesuaikan kelompok)
 - **Database & Model**: `database/wisata_jabar.sql`, `app/models/`
 - **Backend/Controller**: `app/controllers/`, `app/core/`
 - **Frontend/View**: `app/views/`, `public/assets/`
 
-## 📝 Ide Pengembangan Lanjutan (opsional, kalau waktu masih ada)
+## Ide Pengembangan Lanjutan (opsional, kalau waktu masih ada)
 - Upload foto langsung (bukan cuma URL)
 - Rating & komentar dari user
 - Halaman khusus per kabupaten
