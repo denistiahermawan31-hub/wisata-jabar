@@ -1,7 +1,5 @@
 # Wisata Alam Jawa Barat
 
----
-
 Aplikasi web fullstack katalog dan reservasi tiket destinasi wisata alam di Jawa Barat. Aplikasi ini dibangun menggunakan PHP Native dengan konsep arsitektur MVC (Model-View-Controller) manual tanpa framework backend, serta menggunakan Bootstrap 5 (CDN) untuk antarmuka pengguna.
 
 Project ini dibuat untuk memenuhi tugas kelompok mata pelajaran KK- RPL 
