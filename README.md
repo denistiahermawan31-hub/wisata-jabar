@@ -1,10 +1,6 @@
 # Wisata Alam Jawa Barat
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2E7D32&center=true&vCenter=true&width=500&lines=Selamat+Datang+di+JabarNature;Eksplorasi+Wisata+Alam+Jawa+Barat;PHP+Native+MVC+%2B+Bootstrap+5" alt="Typing Animation" />
-</p>
-
-<p align="center">
   <a href="#tech-stack--tools">
     <img src="https://img.shields.io/badge/PHP-Native_MVC-777BB4?style=for-the-badge&logo=php&logoColor=white" />
     <img src="https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
