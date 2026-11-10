@@ -116,6 +116,11 @@
             padding: 52px 20px;
         }
 
+        .hero-title {
+            font-size: 2.35rem;
+            line-height: 1.12;
+        }
+
         .destination-cards {
             grid-template-columns: 1fr;
         }
@@ -126,6 +131,7 @@
             padding-bottom: 48px;
         }
     }
+
 </style>
 
 <!-- HERO SECTION DENGAN BACKGROUND VIDEO & CAROUSEL SLIDER -->
