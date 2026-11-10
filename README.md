@@ -1,14 +1,14 @@
-<<<<<<< HEAD
 <div align="center">
 
   # WisataJabar — Wisata Alam Jawa Barat
-  **Aplikasi Fullstack Web Eksplorasi Wisata Alam berbasis MVC PHP Native**
+  **Aplikasi Fullstack Web Eksplorasi Wisata Alam berbasis Custom MVC PHP Native**
 
-  [![PHP Native](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
-  [![Bootstrap 5](https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+  [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+  [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+  [![PHP](https://img.shields.io/badge/PHP_8-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
   [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
   [![Laragon](https://img.shields.io/badge/Laragon-0E83CD?style=for-the-badge&logo=laragon&logoColor=white)](https://laragon.org/)
-  [![Architecture](https://img.shields.io/badge/Architecture-MVC_Pattern-orange?style=for-the-badge)](#)
 
 </div>
 
@@ -16,39 +16,29 @@
 
 ## Deskripsi Project
 
-**WisataJabar** adalah tugas besar mata pelajaran **KK-RPL**. Aplikasi ini dirancang untuk memudahkan pengguna dalam menjelajahi keindahan wisata alam di Jawa Barat. Dibangun menggunakan arsitektur **MVC (Model-View-Controller)** murni dengan **PHP Native** untuk memahami alur kerja backend modern secara mendalam.
+**WisataJabar** adalah aplikasi web eksplorasi destinasi wisata alam di Jawa Barat. Aplikasi ini dibangun mengimplementasikan arsitektur **MVC (Model-View-Controller)** murni menggunakan **PHP Native** untuk mengolah *backend* dan *routing*, serta **HTML5, CSS3, dan Native JavaScript** untuk antarmuka pengguna yang responsif, modern, dan interaktif (fitur video background, custom carousel slider, dan peta interaktif Leaflet.js).
 
 ---
 
-## Tech Stack & Requirements
+## Tech Stack & Tools
 
 | Layer | Teknologi / Tools | Deskripsi |
 | :--- | :--- | :--- |
-| **Front-End** | <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"/> <img src="https://img.shields.io/badge/Bootstrap_5-7952B3?style=flat&logo=bootstrap&logoColor=white"/> | Layout responsif & komponen UI |
-| **Back-End** | <img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white"/> | Arsitektur MVC Native tanpa framework |
-| **Database** | <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"/> | Manajemen data relational via phpMyAdmin |
-| **Environment**| <img src="https://img.shields.io/badge/Laragon-0E83CD?style=flat&logo=laragon&logoColor=white"/> | Local Web Server (Apache + MySQL) |
+| **Front-End** | <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"/> | Layout responsif, styling modern (Emerald Glassmorphism), interaktivitas UI & Peta Leaflet.js |
+| **Back-End** | <img src="https://img.shields.io/badge/PHP_8-777BB4?style=flat&logo=php&logoColor=white"/> | Custom MVC Framework murni tanpa library/framework external |
+| **Database** | <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white"/> | Relational Database Management System |
+| **Environment**| <img src="https://img.shields.io/badge/Laragon-0E83CD?style=flat&logo=laragon&logoColor=white"/> | Local Web Server Environment (Apache & MySQL) |
 
 ---
 
-## Struktur Folder Project
+## Cara Menjalankan Project di Lokal (Laragon)
 
-<details>
-<summary><b>Klik untuk melihat struktur direktori lengkap</b></summary>
+### 1. Persiapan Server Lokal
+* Pastikan aplikasi **Laragon** sudah terinstal dan berjalan di komputer/laptop.
+* Nyalakan service Apache dan MySQL (klik **Start All** pada Laragon).
 
-```text
-WisataJabar/
-├── app/
-│   ├── core/           -> Router.php, Controller.php, Database.php
-│   ├── controllers/    -> HomeController, DestinasiController, AuthController, AdminController
-│   ├── models/         -> Destinasi.php, Kategori.php, User.php
-│   └── views/          -> layouts/, home/, destinasi/, auth/, admin/
-├── config/
-│   └── config.php      -> Koneksi database & helper (base_url, asset, dll)
-├── database/
-│   └── wisata_jabar.sql -> Struktur tabel + data dummy 10 destinasi
-├── public/             -> Entry point (index.php) + assets (css, js, img)
-├── .htaccess           -> Redirect request ke folder /public
-└── README.md
-=======
->>>>>>> d94cae7 ("feat: inisialisasi struktur kerangka proyek MVC wisata alam")
+### 2. Pindahkan Source Code
+* Clone atau letakkan folder project `wisata-alam` ke dalam direktori web root Laragon:
+  ```text
+  C:\laragon\www\wisata-alam
+  
