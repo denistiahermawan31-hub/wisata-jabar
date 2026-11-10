@@ -36,7 +36,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Project Wisata Alam - Kelompok Daring TKA. All Rights Reserved.</p>
+            <p>&copy; 2026 Project Wisata Alam -  All Rights Reserved.</p>
         </div>
     </footer>
 

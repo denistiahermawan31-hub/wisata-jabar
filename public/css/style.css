@@ -27,94 +27,111 @@ body {
     line-height: 1.6;
 }
 
-/* NAVBAR (GLASSMORPHISM) */
+/* ==========================================
+   OVERRIDE NAVBAR: ULTRA CLEAN & TRANSPARENT
+   ========================================== */
 .navbar-container {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 1200px;
-    z-index: 1000;
+    all: unset !important;
+}
+
+.site-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 14px 28px;
-    background: rgba(10, 46, 29, 0.75);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 50px;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 16px 5% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    /* Transparan halus dengan efek glassmorphism */
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.65) 0%, rgba(15, 23, 42, 0) 100%) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 0 !important; /* Hapus kapsul hijau kaku */
+    box-shadow: none !important;
 }
 
+/* Logo */
 .brand-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--white);
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-family: var(--font-heading);
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    color: #ffffff !important;
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
 }
 
-.brand-logo i {
-    color: var(--primary-light);
+.brand-logo i, .brand-logo strong {
+    color: #10b981 !important; /* Hijau Mint Cerah */
 }
 
-.brand-logo strong {
-    color: var(--primary-light);
-}
-
+/* Menu Navigasi */
 .nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 24px;
+    display: flex !important;
+    align-items: center !important;
+    gap: 32px !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .nav-link {
-    color: rgba(255, 255, 255, 0.85);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: var(--transition);
+    color: rgba(255, 255, 255, 0.85) !important;
+    text-decoration: none !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
 }
 
 .nav-link:hover, .nav-link.active {
-    color: var(--primary-light);
+    color: #10b981 !important;
 }
 
+/* Aksi Kanan */
 .nav-actions {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
 }
 
-.btn-search {
-    background: none;
-    border: none;
-    color: var(--white);
-    font-size: 1.1rem;
-    cursor: pointer;
-    padding: 8px;
+.btn-icon {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: none !important;
+    color: #ffffff !important;
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
-.btn-primary {
-    background: var(--primary-light);
-    color: var(--white);
-    padding: 10px 22px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.85rem;
-    transition: var(--transition);
+.btn-primary-sm {
+    background: #10b981 !important;
+    color: #ffffff !important;
+    padding: 10px 22px !important;
+    border-radius: 30px !important;
+    text-decoration: none !important;
+    font-weight: 700 !important;
+    font-size: 0.85rem !important;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4) !important;
+    transition: all 0.3s ease !important;
 }
 
-.btn-primary:hover {
-    background: #059669;
-    transform: translateY(-2px);
+.btn-primary-sm:hover {
+    background: #059669 !important;
+    transform: translateY(-2px) !important;
 }
 
 /* HERO VIDEO SECTION */
@@ -512,4 +529,127 @@ body {
     padding-top: 20px;
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.5);
+}
+/* ======================================================
+   CAROUSEL SLIDER (TANPA LINK JELAJAHI)
+   ====================================================== */
+.dest-slider-wrapper {
+    position: absolute !important;
+    bottom: 35px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 90% !important;
+    max-width: 900px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    z-index: 30 !important;
+}
+
+.active-indicator-arrow {
+    position: absolute !important;
+    top: -16px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-left: 9px solid transparent !important;
+    border-right: 9px solid transparent !important;
+    border-bottom: 11px solid #ffffff !important;
+    z-index: 35 !important;
+}
+
+.dest-slider-viewport {
+    width: 100% !important;
+    overflow: hidden !important;
+    margin: 0 15px !important;
+    padding: 10px 0 !important;
+}
+
+.dest-slider-track {
+    display: flex !important;
+    align-items: center !important;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    will-change: transform;
+}
+
+.slider-item {
+    flex: 0 0 200px !important;
+    text-align: center !important;
+    color: rgba(255, 255, 255, 0.45) !important;
+    cursor: pointer !important;
+    transition: all 0.4s ease !important;
+    user-select: none !important;
+}
+
+.slider-item h3 {
+    font-size: 1.05rem !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+    margin: 0 !important;
+    color: inherit !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Item Aktif Berukuran Lebih Besar & Tegas */
+.slider-item.active {
+    color: #ffffff !important;
+    transform: scale(1.25) !important;
+}
+
+.slider-item.active h3 {
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8) !important;
+}
+
+.slider-btn {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: #ffffff !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    backdrop-filter: blur(8px) !important;
+    transition: all 0.3s ease !important;
+    flex-shrink: 0 !important;
+    z-index: 40 !important;
+}
+
+.slider-btn:hover {
+    background: rgba(255, 255, 255, 0.35) !important;
+    transform: scale(1.08) !important;
+}
+
+@media (max-width: 768px) {
+    .dest-slider-wrapper {
+        bottom: 25px !important;
+        width: 95% !important;
+    }
+    
+    .slider-item {
+        flex: 0 0 160px !important;
+    }
+    
+    .slider-item h3 {
+        font-size: 0.95rem !important;
+    }
+
+    .slider-item.active h3 {
+        font-size: 1.15rem !important;
+    }
+}
+.hero-video {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    z-index: -2 !important;
+    transition: opacity 0.4s ease-in-out !important;
 }
