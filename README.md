@@ -40,4 +40,5 @@
 ### 2. Pindahkan Source Code
 * Clone atau letakkan folder project `wisata-jabar` ke dalam direktori web root Laragon:
   ```text
-  C:\laragon\www\WisataJabar
+  C:\laragon\www\wisata-jabar
+  
