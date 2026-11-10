@@ -38,7 +38,7 @@
 * Nyalakan service Apache dan MySQL (klik **Start All** pada Laragon).
 
 ### 2. Pindahkan Source Code
-* Clone atau letakkan folder project `wisata-jabar` ke dalam direktori web root Laragon:
+* Clone atau letakkan folder project `wisata-alam` ke dalam direktori web root Laragon:
   ```text
-  C:\laragon\www\wisata-jabar
+  C:\laragon\www\wisata-alam
   
