@@ -108,7 +108,6 @@
         .destination-cards {
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
-
     }
 
     @media (max-width: 600px) {
@@ -131,7 +130,6 @@
             padding-bottom: 48px;
         }
     }
-
 </style>
 
 <!-- HERO SECTION DENGAN BACKGROUND VIDEO & CAROUSEL SLIDER -->
@@ -181,44 +179,78 @@
     </div>
 </section>
 
-<!-- SEKSI DESTINASI UNGGULAN (CARDS) -->
+<!-- SEKSI DESTINASI UNGGULAN (CARDS) - 10 DESTINASI POPULER -->
 <section class="section-container bg-light">
     <div class="section-header">
         <div>
             <span class="sub-title">Rekomendasi Utama</span>
-            <h2 class="main-title">Destinasi Wisata Alam Terfavorit</h2>
+            <h2 class="main-title">Destinasi Populer di Jawa Barat</h2>
         </div>
         <a href="#" class="link-more">Lihat Semua Wisata <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 
     <div class="destination-grid">
-        <!-- Card 1: Taman Safari Indonesia Bogor -->
+        <!-- 1. Tangkuban Perahu -->
         <div class="dest-card">
             <div class="dest-img">
-                <img src="public/images/safari.jpeg" alt="Taman Safari Indonesia Bogor">
-                <span class="badge-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                <img src="public/images/tangkuban.jpeg" alt="Tangkuban Perahu">
+                <span class="badge-rating"><i class="fa-solid fa-star"></i> 4.6</span>
             </div>
             <div class="dest-body">
-                <span class="dest-location"><i class="fa-solid fa-location-dot"></i> Cisarua, Bogor</span>
-                <h3>Taman Safari Indonesia Bogor</h3>
-                <p>Jelajahi konservasi alam terbuka, wahana permainan seru, dan lanskap alam pegunungan yang asri.</p>
+                <span class="dest-location"><i class="fa-solid fa-location-dot"></i> Subang / Bandung Barat</span>
+                <h3>Tangkuban Perahu</h3>
+                <p>Gunung berapi aktif dengan kawah luas yang ikonik dan legendaris di dataran tinggi Pasundan.</p>
                 <div class="dest-footer">
-                    <span class="price">Rp 450.000 <span>/ Orang</span></span>
-                    <a href="taman-safari.php" class="btn-outline">Detail Spot</a>
+                    <span class="price">Rp 30.000 <span>/ Orang</span></span>
+                    <a href="tangkuban-parahu.php" class="btn-outline">Detail Spot</a>
                 </div>
             </div>
         </div>
 
-        <!-- Card 2: Kawah Putih -->
+        <!-- 2. Papandayan -->
         <div class="dest-card">
             <div class="dest-img">
-                <img src="public/images/kawah.jpeg" alt="Kawah Putih Ciwidey">
+                <img src="public/images/safari.jpeg" alt="Gunung Papandayan">
+                <span class="badge-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+            </div>
+            <div class="dest-body">
+                <span class="dest-location"><i class="fa-solid fa-location-dot"></i> Garut</span>
+                <h3>Gunung Papandayan</h3>
+                <p>Surga pendaki pemula dengan pemandangan kawah aktif, hutan mati yang eksotis, dan padang edelweis.</p>
+                <div class="dest-footer">
+                    <span class="price">Rp 35.000 <span>/ Orang</span></span>
+                    <a href="papandayan.php" class="btn-outline">Detail Spot</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Ciremai -->
+        <div class="dest-card">
+            <div class="dest-img">
+                <img src="public/images/kawah.jpeg" alt="Gunung Ciremai">
+                <span class="badge-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+            </div>
+            <div class="dest-body">
+                <span class="dest-location"><i class="fa-solid fa-location-dot"></i> Kuningan / Majalengka</span>
+                <h3> Gunung Ciremai</h3>
+                <p>Gunung tertinggi di Jawa Barat yang menawarkan tantangan pendakian serta panorama alam puncak yang luar biasa.</p>
+                <div class="dest-footer">
+                    <span class="price">Rp 50.000 <span>/ Orang</span></span>
+                    <a href="ciremai.php" class="btn-outline">Detail Spot</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Kawah Putih -->
+        <div class="dest-card">
+            <div class="dest-img">
+                <img src="public/images/kawah.jpeg" alt="Kawah Putih">
                 <span class="badge-rating"><i class="fa-solid fa-star"></i> 4.5</span>
             </div>
             <div class="dest-body">
-                <span class="dest-location"><i class="fa-solid fa-location-dot"></i> Pasirjambu, Kab. Bandung</span>
-                <h3>Kawah Putih Ciwidey</h3>
-                <p>Danau kawah gunung berapi belerang ini memiliki warna khas, tanaman langka & satwa liar eksotis.</p>
+                <span class="dest-location"><i class="fa-solid fa-location-dot"></i> Ciwidey, Kab. Bandung</span>
+                <h3>Kawah Putih</h3>
+                <p>Danau kawah vulkanik eksotis dengan air berwarna putih kehijauan yang dikelilingi hutan pegunungan berkabut.</p>
                 <div class="dest-footer">
                     <span class="price">Rp 30.000 <span>/ Orang</span></span>
                     <a href="kawah-putih.php" class="btn-outline">Detail Spot</a>
@@ -226,24 +258,110 @@
             </div>
         </div>
 
-        <!-- Card 3: Gunung Tangkuban Parahu -->
+        <!--5. Pangandaran -->
         <div class="dest-card">
             <div class="dest-img">
-                <img src="public/images/tangkuban.jpeg" alt="Gunung Tangkuban Parahu">
+                <img src="public/images/safari.jpeg" alt="Pantai Pangandaran">
+                <span class="badge-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+            </div>
+            <div class="dest-body">
+                <span class="dest-location"><i class="fa-solid fa-location-dot"></i> Pangandaran</span>
+                <h3>Pangandaran</h3>
+                <p>Destinasi pantai terfavorit di Jawa Barat dengan pasir hitam dan putih, ombak ramah peselancar, serta cagar alam.</p>
+                <div class="dest-footer">
+                    <span class="price">Rp 10.000 <span>/ Orang</span></span>
+                    <a href="pangandaran.php" class="btn-outline">Detail Spot</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Gedung Sate -->
+        <div class="dest-card">
+            <div class="dest-img">
+                <img src="public/images/tangkuban.jpeg" alt="Gedung Sate">
                 <span class="badge-rating"><i class="fa-solid fa-star"></i> 4.6</span>
             </div>
             <div class="dest-body">
-                <span class="dest-location"><i class="fa-solid fa-location-dot"></i> Sagalaherang, Subang</span>
-                <h3>Gunung Tangkuban Parahu</h3>
-                <p>Objek wisata populer dengan tempat pengamatan yang menyajikan panorama kawah gunung berapi yang mendidih.</p>
+                <span class="dest-location"><i class="fa-solid fa-location-dot"></i> Kota Bandung</span>
+                <h3>Gedung Sate</h3>
+                <p>Ikon arsitektur bersejarah Kota Bandung dengan ciri khas ornamen tusuk sate di menara utamanya.</p>
                 <div class="dest-footer">
-                    <span class="price">Rp 30.000 <span>/ Orang</span></span>
-                    <a href="tangkuban-parahu.php" class="btn-outline">Detail Spot</a>
+                    <span class="price">Gratis <span>(Area Luar)</span></span>
+                    <a href="destinasi-gedung-sate.php" class="btn-outline">Detail Spot</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. Pantai Pelabuhan Ratu -->
+        <div class="dest-card">
+            <div class="dest-img">
+                <img src="public/images/kawah.jpeg" alt="Pantai Pelabuhan Ratu">
+                <span class="badge-rating"><i class="fa-solid fa-star"></i> 4.5</span>
+            </div>
+            <div class="dest-body">
+                <span class="dest-location"><i class="fa-solid fa-location-dot"></i> Sukabumi</span>
+                <h3>Pantai Pelabuhan Ratu</h3>
+                <p>Kawasan pantai samudra hindia yang terkenal dengan pemandangan dramatis, ombak besar, dan legenda pesisirnya.</p>
+                <div class="dest-footer">
+                    <span class="price">Rp 15.000 <span>/ Orang</span></span>
+                    <a href="pelabuhan-ratu.php" class="btn-outline">Detail Spot</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. Kawah Talaga Bodas -->
+        <div class="dest-card">
+            <div class="dest-img">
+                <img src="public/images/safari.jpeg" alt="Kawah Talaga Bodas">
+                <span class="badge-rating"><i class="fa-solid fa-star"></i> 4.6</span>
+            </div>
+            <div class="dest-body">
+                <span class="dest-location"><i class="fa-solid fa-location-dot"></i> Garut</span>
+                <h3>Kawah Talaga Bodas</h3>
+                <p>Danau kawah belerang air putih jernih yang tenang, sering disebut sebagai kembaran Kawah Putih yang lebih asri.</p>
+                <div class="dest-footer">
+                    <span class="price">Rp 10.000 <span>/ Orang</span></span>
+                    <a href="talaga-bodas.php" class="btn-outline">Detail Spot</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9. Citumang -->
+        <div class="dest-card">
+            <div class="dest-img">
+                <img src="public/images/tangkuban.jpeg" alt="Citumang Body Rafting">
+                <span class="badge-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+            </div>
+            <div class="dest-body">
+                <span class="dest-location"><i class="fa-solid fa-location-dot"></i> Pangandaran</span>
+                <h3>Citumang</h3>
+                <p>Sungai jernih berwarna hijau kebiruan di tengah hutan asri, sangat cocok untuk aktivitas body rafting.</p>
+                <div class="dest-footer">
+                    <span class="price">Rp 20.000 <span>/ Orang</span></span>
+                    <a href="citumang.php" class="btn-outline">Detail Spot</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10. Kampung Naga -->
+        <div class="dest-card">
+            <div class="dest-img">
+                <img src="public/images/kawah.jpeg" alt="Kampung Naga">
+                <span class="badge-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+            </div>
+            <div class="dest-body">
+                <span class="dest-location"><i class="fa-solid fa-location-dot"></i> Tasikmalaya</span>
+                <h3>Kampung Naga</h3>
+                <p>Kampung adat tradisional Sunda yang masih memegang teguh kebudayaan leluhur di lembah yang subur.</p>
+                <div class="dest-footer">
+                    <span class="price">Sukarela <span>/ Donasi</span></span>
+                    <a href="kampung-naga.php" class="btn-outline">Detail Spot</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <section class="map-placeholder" aria-label="Tempat peta Jawa Barat">
     <div class="map-placeholder-inner">
         <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
